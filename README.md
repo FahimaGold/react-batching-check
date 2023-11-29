@@ -1,8 +1,5 @@
-# React + Vite
+# Checking React Batching
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An app that checks how batching works in React 18. The app Uses two states variables: a **counter** that is incremented, and a **flag** that is toggled between `0` and `1`. A button when it is clicked, the states are updated, and the `GIF` below shows how many times a re-render takes place. 
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Then, the states are updated inside a **timeout**, and the `GIF` below shows how many re-renders take place.
