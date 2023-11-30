@@ -9,4 +9,4 @@ Then, the states are updated inside a **timeout**, and the `GIF` below shows how
 
 ![batchInTimeout](https://github.com/FahimaGold/react-batching-check/assets/13876176/3aa2dd37-2b54-4e75-92bd-5c96a595ed75)
 
-We notice that in the very first state updates, the re-render takes place **twice**, in the next state updates, it will be batched and takes place only **once**.
+We notice that in the very first state updates, the re-render takes place **twice**, this is due to the fact that we are using `Strict Mode`, and in the next state updates, it will be batched and takes place only **once**.
